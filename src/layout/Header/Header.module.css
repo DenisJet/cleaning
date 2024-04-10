@@ -1,0 +1,105 @@
+.header {
+  position: fixed;
+  background-color: var(--white);
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 2;
+}
+
+.headerContainer {
+  position: relative;
+  max-width: var(--max-width);
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.logo img {
+  width: 25px;
+  object-fit: cover;
+}
+
+.logo span {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navMobileLink {
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.button {
+  position: absolute;
+  right: 15px;
+  top: -13px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.navMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.tel {
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tel:hover {
+  text-decoration: underline;
+}
+
+.tel svg {
+  margin-right: 10px;
+}
+
+@media screen and (width < 700px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (width >= 700px) {
+  .navMobile,
+  .button {
+    display: none;
+  }
+
+  .headerContainer {
+    display: flex;
+    align-items: center;
+  }
+}
