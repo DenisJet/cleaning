@@ -38,13 +38,13 @@
   margin-left: auto;
   margin-right: auto;
   z-index: 2;
+  position: relative;
 }
 
 .intro h1 {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  z-index: 2;
 }
 
 .title {
@@ -52,19 +52,16 @@
   font-weight: 700;
   margin-bottom: 5px;
   margin-top: 5px;
-  z-index: 2;
 }
 
 .title span {
   color: var(--primary-blue);
-  z-index: 2;
 }
 
 .text {
   font-size: 14px;
   max-width: 500px;
   margin-bottom: 30px;
-  z-index: 2;
 }
 
 .imageContainer {
