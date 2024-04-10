@@ -1,7 +1,11 @@
 import Button from '../Button/Button';
 import styles from './Intro.module.css';
 
-export default function Intro() {
+interface IntroProps {
+  onClick?: () => void;
+}
+
+export default function Intro({ onClick }: IntroProps): JSX.Element {
   return (
     <section className={styles.intro}>
       <div className={styles.blur1}></div>
@@ -17,7 +21,7 @@ export default function Intro() {
             Уборка помещений любой сложности! Профессиональная химчистка мягкой мебели, ковров, штор, портьер,
             автомобиля! Обучение!
           </p>
-          <Button />
+          <Button onClick={onClick} />
         </div>
         <div className={styles.imageContainer}>
           <div className={styles.stars1}></div>
