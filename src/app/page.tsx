@@ -3,6 +3,7 @@ import Intro from '@/components/Intro/Intro';
 import styles from './page.module.css';
 import { useState } from 'react';
 import Modal from '@/components/Modal/Modal';
+import Services from '@/components/Services/Services';
 
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
@@ -12,6 +13,7 @@ export default function Home() {
       <main className={styles.main}>
         <Intro onClick={() => setModalActive(true)} />
         <div className={styles.divider}></div>
+        <Services onClick={() => setModalActive(true)} />
       </main>
       <Modal active={modalActive} setActive={setModalActive} />
     </>
