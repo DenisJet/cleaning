@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from './Header.module.css';
 import { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 const useOutsideClick = (initialValue: boolean) => {
   const [isOpened, setIsOpened] = useState(initialValue);
@@ -11,6 +12,7 @@ const useOutsideClick = (initialValue: boolean) => {
   const handleClick = (e: { target: any }) => {
     if (ref.current && !ref.current.contains(e.target)) {
       setIsOpened(!isOpened);
+      clearAllBodyScrollLocks();
     }
   };
 
@@ -30,6 +32,13 @@ export default function Header(): JSX.Element {
 
   const handleButtonClick = () => {
     setIsOpened(!isOpened);
+
+    if (!isOpened) {
+      disableBodyScroll(ref);
+    }
+    if (isOpened) {
+      enableBodyScroll(ref);
+    }
   };
 
   return (
@@ -90,16 +99,16 @@ export default function Header(): JSX.Element {
         </nav>
         {isOpened ? (
           <nav ref={ref} className={styles.navMobile}>
-            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href=''>
+            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='/'>
               Клининг
             </Link>
-            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href=''>
+            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='/dry-cleaning'>
               Химчистка
             </Link>
-            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href=''>
+            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='/about'>
               О компании
             </Link>
-            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href=''>
+            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='/education'>
               Обучение
             </Link>
             <Link className={styles.tel} href='tel:+79999999999' onClick={() => setIsOpened(false)}>
