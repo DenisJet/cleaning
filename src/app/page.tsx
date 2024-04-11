@@ -11,6 +11,7 @@ export default function Home() {
     <>
       <main className={styles.main}>
         <Intro onClick={() => setModalActive(true)} />
+        <div className={styles.divider}></div>
       </main>
       <Modal active={modalActive} setActive={setModalActive} />
     </>
