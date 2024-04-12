@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Modal from '@/components/Modal/Modal';
 import Services from '@/components/Services/Services';
 import Advantages from '@/components/Advantages/Advantages';
+import Benefits from '@/components/Benefits/Benefits';
 
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
@@ -15,6 +16,7 @@ export default function Home() {
         <Intro onClick={() => setModalActive(true)} />
         <div className={styles.divider}></div>
         <Services onClick={() => setModalActive(true)} />
+        <Benefits />
         <Advantages />
       </main>
       <Modal active={modalActive} setActive={setModalActive} />
