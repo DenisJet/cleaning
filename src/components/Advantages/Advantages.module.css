@@ -1,0 +1,74 @@
+.advantages {
+  background: var(--primary-blue);
+  padding: 25px 10px;
+  color: var(--white);
+}
+
+.advList {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.advItem {
+  padding: 10px;
+  padding-left: 70px;
+  position: relative;
+}
+
+.advItem::before {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: '';
+  width: 50px;
+  height: 50px;
+}
+
+.customers::before {
+  width: 54px;
+  background: url("/customers.svg") no-repeat center / contain ;
+}
+
+.members::before {
+  width: 58px;
+  background: url("/members.svg") no-repeat center / contain ;
+}
+
+.award::before {
+  width: 55px;
+  background: url("/award.svg") no-repeat center / contain ;
+}
+
+.project::before {
+  background: url("/project.svg") no-repeat center / contain ;
+}
+
+.itemNumber {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.itemText {
+  font-size: 18px;
+  margin: 0;
+}
+
+@media screen and (width >= 500px) {
+  .advList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (width >= 900px) {
+  .advList {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
