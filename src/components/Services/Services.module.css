@@ -58,6 +58,11 @@
 
 .itemTitle {
   font-weight: 600;
+  margin-bottom: 0;
+}
+
+.itemText {
+  font-size: 14px;
 }
 
 @media screen and (width >= 900px) {
@@ -69,5 +74,9 @@
   .title {
     font-size: 30px;
     font-weight: 700;
+  }
+
+  .itemText {
+    font-size: 16px;
   }
 }
