@@ -7,6 +7,7 @@ import Services from '@/components/Services/Services';
 import Advantages from '@/components/Advantages/Advantages';
 import Benefits from '@/components/Benefits/Benefits';
 import Consultation from '@/components/Consultation/Consultation';
+import Gallery from '@/components/Gallery/Gallery';
 
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
@@ -19,6 +20,7 @@ export default function Home() {
         <Services onClick={() => setModalActive(true)} />
         <Advantages />
         <Benefits />
+        <Gallery />
         <Consultation onClick={() => setModalActive(true)} />
       </main>
       <Modal active={modalActive} setActive={setModalActive} />
