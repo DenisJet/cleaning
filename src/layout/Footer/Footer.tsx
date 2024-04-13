@@ -1,3 +1,4 @@
+import SocialList from '@/components/SocialList/SocialList';
 import styles from './Footer.module.css';
 import Link from 'next/link';
 
@@ -5,10 +6,13 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <Link className={styles.logo} href='/'>
-          <img src='logo.png' alt='логотип' />
-          <span>CleaningProfi</span>
-        </Link>
+        <div>
+          <Link className={styles.logo} href='/'>
+            <img src='logo.png' alt='логотип' />
+            <span>CleaningProfi</span>
+          </Link>
+          <SocialList />
+        </div>
         <nav className={styles.nav}>
           <Link className={styles.navLink} href='/'>
             Клининг

@@ -1,7 +1,7 @@
 .footer {
   background-color: var(--footer-color);
   width: 100%;
-  padding: 50px 10px;
+  padding: 75px 10px;
   color: var(--white);
 }
 
@@ -84,7 +84,7 @@
   }
 
   .logo {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .nav {
