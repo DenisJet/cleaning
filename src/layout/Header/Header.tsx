@@ -33,12 +33,12 @@ export default function Header(): JSX.Element {
   const handleButtonClick = () => {
     setIsOpened(!isOpened);
 
-    if (!isOpened) {
-      disableBodyScroll(ref);
-    }
-    if (isOpened) {
-      enableBodyScroll(ref);
-    }
+    // if (!isOpened) {
+    //   disableBodyScroll(ref);
+    // }
+    // if (isOpened) {
+    //   enableBodyScroll(ref);
+    // }
   };
 
   return (
