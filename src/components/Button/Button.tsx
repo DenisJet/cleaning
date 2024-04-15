@@ -1,5 +1,7 @@
+import { useContext } from 'react';
 import styles from './Button.module.css';
 import cn from 'classnames';
+import { ModalContext } from '@/context/modal.context';
 
 interface ButtonProps {
   onClick?: () => void;
@@ -7,8 +9,10 @@ interface ButtonProps {
 }
 
 export default function Button({ onClick, className }: ButtonProps): JSX.Element {
+  const { isOpen, setIsOpen } = useContext(ModalContext);
+
   return (
-    <button className={cn(styles.button, className)} type='button' onClick={onClick}>
+    <button className={cn(styles.button, className)} type='button' onClick={() => setIsOpen(true)}>
       Оставить заявку
     </button>
   );

@@ -15,7 +15,7 @@ export default function Consultation({ onClick }: ConsultationProps): JSX.Elemen
           производственных предприятиях, а также в коттеджных комплексах. Приводим в порядок зоны отдыха,
           конференц-залы, объекты общественного пользования.
         </p>
-        <Button onClick={onClick} className={styles.button} />
+        <Button className={styles.button} />
       </div>
     </section>
   );

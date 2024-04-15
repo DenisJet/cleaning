@@ -27,7 +27,7 @@ export default function Services({ onClick, services }: ServicesProps): JSX.Elem
               <div className={styles.textItemContainer}>
                 <h3 className={styles.itemTitle}>{service.title}</h3>
                 <p className={styles.itemText}>{service.text}</p>
-                <Button onClick={onClick} />
+                <Button />
               </div>
             </li>
           ))}

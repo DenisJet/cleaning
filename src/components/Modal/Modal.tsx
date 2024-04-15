@@ -1,19 +1,22 @@
-import { Dispatch, SetStateAction } from 'react';
+import { Dispatch, SetStateAction, useContext } from 'react';
 import styles from './Modal.module.css';
+import { ModalContext } from '@/context/modal.context';
 
 interface ModalProps {
   active: boolean;
   setActive: Dispatch<SetStateAction<boolean>>;
 }
 
-export default function Modal({ active, setActive }: ModalProps): JSX.Element {
+export default function Modal(): JSX.Element {
+  const { isOpen, setIsOpen } = useContext(ModalContext);
+
   return (
-    <div className={active ? `${styles.modal} ${styles.active}` : styles.modal} onClick={() => setActive(false)}>
+    <div className={isOpen ? `${styles.modal} ${styles.active}` : styles.modal} onClick={() => setIsOpen(false)}>
       <div
-        className={active ? `${styles.modalContent} ${styles.active}` : styles.modalContent}
+        className={isOpen ? `${styles.modalContent} ${styles.active}` : styles.modalContent}
         onClick={(evt) => evt.stopPropagation()}
       >
-        <button type='button' title='Закрыть' className={styles.button} onClick={() => setActive(false)}>
+        <button type='button' title='Закрыть' className={styles.button} onClick={() => setIsOpen(false)}>
           <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'>
             <path
               fillRule='evenodd'

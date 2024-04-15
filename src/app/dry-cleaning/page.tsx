@@ -11,8 +11,6 @@ import Gallery from '@/components/Gallery/Gallery';
 import Advantages from '@/components/Advantages/Advantages';
 
 export default function DryCleaning() {
-  const [modalActive, setModalActive] = useState(false);
-
   return (
     <>
       <main className={styles.main}>
@@ -27,18 +25,18 @@ export default function DryCleaning() {
                 Профессиональная химчистка мягкой мебели, ковров, штор, портьер, автомобиля! Выводим пятна и запахи,
                 предотвращаем размножение вредителей внутри обивки, матрасов и ковров. Обучение!
               </p>
-              <Button onClick={() => setModalActive(true)} />
+              <Button />
             </div>
             <div className={styles.imageContainer}></div>
           </div>
         </section>
         <Divider />
-        <Services services={dryCleaningServices} onClick={() => setModalActive(true)} />
+        <Services services={dryCleaningServices} />
         <Advantages />
         <Gallery />
-        <Consultation onClick={() => setModalActive(true)} />
+        <Consultation />
       </main>
-      <Modal active={modalActive} setActive={setModalActive} />
+      <Modal />
     </>
   );
 }

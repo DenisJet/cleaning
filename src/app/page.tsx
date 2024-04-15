@@ -1,7 +1,6 @@
 'use client';
 import Intro from '@/components/Intro/Intro';
 import styles from './page.module.css';
-import { useState } from 'react';
 import Modal from '@/components/Modal/Modal';
 import Services from '@/components/Services/Services';
 import Advantages from '@/components/Advantages/Advantages';
@@ -12,20 +11,18 @@ import Divider from '@/components/Divider/Divider';
 import { cleaningServices } from '@/components/Services/cleaning.services';
 
 export default function Home() {
-  const [modalActive, setModalActive] = useState(false);
-
   return (
     <>
       <main className={styles.main}>
-        <Intro onClick={() => setModalActive(true)} />
+        <Intro />
         <Divider />
-        <Services services={cleaningServices} onClick={() => setModalActive(true)} />
+        <Services services={cleaningServices} />
         <Advantages />
         <Benefits />
         <Gallery />
-        <Consultation onClick={() => setModalActive(true)} />
+        <Consultation />
       </main>
-      <Modal active={modalActive} setActive={setModalActive} />
+      <Modal />
     </>
   );
 }
