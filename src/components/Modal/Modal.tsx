@@ -2,11 +2,6 @@ import { Dispatch, SetStateAction, useContext } from 'react';
 import styles from './Modal.module.css';
 import { ModalContext } from '@/context/modal.context';
 
-interface ModalProps {
-  active: boolean;
-  setActive: Dispatch<SetStateAction<boolean>>;
-}
-
 export default function Modal(): JSX.Element {
   const { isOpen, setIsOpen } = useContext(ModalContext);
 

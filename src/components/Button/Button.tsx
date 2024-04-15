@@ -4,11 +4,10 @@ import cn from 'classnames';
 import { ModalContext } from '@/context/modal.context';
 
 interface ButtonProps {
-  onClick?: () => void;
   className?: string;
 }
 
-export default function Button({ onClick, className }: ButtonProps): JSX.Element {
+export default function Button({ className }: ButtonProps): JSX.Element {
   const { isOpen, setIsOpen } = useContext(ModalContext);
 
   return (

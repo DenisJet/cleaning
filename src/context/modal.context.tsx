@@ -3,7 +3,7 @@ import { createContext, useState } from 'react';
 
 export type ModalContext = {
   isOpen: boolean;
-  setIsOpen: (o: boolean) => void;
+  setIsOpen: (isOpen: boolean) => void;
 };
 
 export const ModalContext = createContext<ModalContext>({

@@ -1,11 +1,7 @@
 import Button from '../Button/Button';
 import styles from './Consultation.module.css';
 
-interface ConsultationProps {
-  onClick?: () => void;
-}
-
-export default function Consultation({ onClick }: ConsultationProps): JSX.Element {
+export default function Consultation(): JSX.Element {
   return (
     <section className={styles.consultation}>
       <div className={styles.container}>

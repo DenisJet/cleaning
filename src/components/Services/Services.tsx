@@ -3,11 +3,10 @@ import { Service } from './cleaning.services';
 import styles from './Services.module.css';
 
 interface ServicesProps {
-  onClick?: () => void;
   services: Service[];
 }
 
-export default function Services({ onClick, services }: ServicesProps): JSX.Element {
+export default function Services({ services }: ServicesProps): JSX.Element {
   return (
     <section className={styles.services}>
       <h2>Наши услуги</h2>
