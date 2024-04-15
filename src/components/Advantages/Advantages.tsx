@@ -14,12 +14,12 @@ export default function Advantages() {
           <p className={styles.itemText}>Обученных специалистов</p>
         </li>
         <li className={cn(styles.advItem, styles.award)}>
-          <p className={styles.itemNumber}>26</p>
-          <p className={styles.itemText}>Наград получено</p>
+          <p className={styles.itemNumber}>12+</p>
+          <p className={styles.itemText}>Лет опыта</p>
         </li>
         <li className={cn(styles.advItem, styles.project)}>
-          <p className={styles.itemNumber}>759+</p>
-          <p className={styles.itemText}>Проектов завершено</p>
+          <p className={styles.itemNumber}>25</p>
+          <p className={styles.itemText}>Филиалов по России</p>
         </li>
       </ul>
     </section>
