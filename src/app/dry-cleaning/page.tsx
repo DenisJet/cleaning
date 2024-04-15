@@ -7,7 +7,6 @@ import { useState } from 'react';
 import Modal from '@/components/Modal/Modal';
 import Services from '@/components/Services/Services';
 import { dryCleaningServices } from '@/components/Services/cleaning.services';
-import Benefits from '@/components/Benefits/Benefits';
 import Gallery from '@/components/Gallery/Gallery';
 import Advantages from '@/components/Advantages/Advantages';
 
