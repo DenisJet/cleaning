@@ -7,6 +7,9 @@ import { useState } from 'react';
 import Modal from '@/components/Modal/Modal';
 import Services from '@/components/Services/Services';
 import { dryCleaningServices } from '@/components/Services/cleaning.services';
+import Benefits from '@/components/Benefits/Benefits';
+import Gallery from '@/components/Gallery/Gallery';
+import Advantages from '@/components/Advantages/Advantages';
 
 export default function DryCleaning() {
   const [modalActive, setModalActive] = useState(false);
@@ -22,8 +25,8 @@ export default function DryCleaning() {
                 <br></br>любых предметов интерьера
               </h1>
               <p className={styles.text}>
-                Профессиональная химчистка мягкой мебели, ковров, штор, портьер, автомобиля! Уборка помещений любой
-                сложности! Обучение!
+                Профессиональная химчистка мягкой мебели, ковров, штор, портьер, автомобиля! Выводим пятна и запахи,
+                предотвращаем размножение вредителей внутри обивки, матрасов и ковров. Обучение!
               </p>
               <Button onClick={() => setModalActive(true)} />
             </div>
@@ -32,7 +35,9 @@ export default function DryCleaning() {
         </section>
         <Divider />
         <Services services={dryCleaningServices} onClick={() => setModalActive(true)} />
-        <Consultation />
+        <Advantages />
+        <Gallery />
+        <Consultation onClick={() => setModalActive(true)} />
       </main>
       <Modal active={modalActive} setActive={setModalActive} />
     </>

@@ -17,9 +17,18 @@ export default function Services({ onClick, services }: ServicesProps): JSX.Elem
           services.length &&
           services.map((service) => (
             <li key={service.id} className={styles.servicesItem}>
-              <h3 className={styles.itemTitle}>{service.title}</h3>
-              <p className={styles.itemText}>{service.text}</p>
-              <Button onClick={onClick} />
+              <img
+                className={styles.servicesImage}
+                src={service.imageUrl}
+                alt='фото услуги'
+                width='300px'
+                height='300px'
+              />
+              <div className={styles.textItemContainer}>
+                <h3 className={styles.itemTitle}>{service.title}</h3>
+                <p className={styles.itemText}>{service.text}</p>
+                <Button onClick={onClick} />
+              </div>
             </li>
           ))}
       </ul>
