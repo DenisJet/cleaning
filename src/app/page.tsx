@@ -9,6 +9,7 @@ import Benefits from '@/components/Benefits/Benefits';
 import Consultation from '@/components/Consultation/Consultation';
 import Gallery from '@/components/Gallery/Gallery';
 import Divider from '@/components/Divider/Divider';
+import { cleaningServices } from '@/components/Services/cleaning.services';
 
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
@@ -18,7 +19,7 @@ export default function Home() {
       <main className={styles.main}>
         <Intro onClick={() => setModalActive(true)} />
         <Divider />
-        <Services onClick={() => setModalActive(true)} />
+        <Services services={cleaningServices} onClick={() => setModalActive(true)} />
         <Advantages />
         <Benefits />
         <Gallery />
