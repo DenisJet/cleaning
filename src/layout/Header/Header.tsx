@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from './Header.module.css';
 import { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
+import { usePathname } from 'next/navigation';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 const useOutsideClick = (initialValue: boolean) => {
@@ -29,6 +30,7 @@ const useOutsideClick = (initialValue: boolean) => {
 export default function Header(): JSX.Element {
   const [activeLink, setActiveLink] = useState('/');
   const { ref, isOpened, setIsOpened } = useOutsideClick(false);
+  const pathname = usePathname();
 
   const handleButtonClick = () => {
     setIsOpened(!isOpened);
@@ -51,7 +53,7 @@ export default function Header(): JSX.Element {
         <nav className={styles.nav}>
           <Link
             className={cn(styles.navLink, {
-              [styles.activeLink]: activeLink === '/',
+              [styles.activeLink]: pathname == '/',
             })}
             href='/'
             onClick={() => setActiveLink('/')}
@@ -60,7 +62,7 @@ export default function Header(): JSX.Element {
           </Link>
           <Link
             className={cn(styles.navLink, {
-              [styles.activeLink]: activeLink === '/dry-cleaning',
+              [styles.activeLink]: pathname === '/dry-cleaning',
             })}
             href='/dry-cleaning'
             onClick={() => setActiveLink('/dry-cleaning')}
@@ -69,7 +71,7 @@ export default function Header(): JSX.Element {
           </Link>
           <Link
             className={cn(styles.navLink, {
-              [styles.activeLink]: activeLink === '/about',
+              [styles.activeLink]: pathname === '/about',
             })}
             href='/about'
             onClick={() => setActiveLink('/about')}
@@ -78,7 +80,7 @@ export default function Header(): JSX.Element {
           </Link>
           <Link
             className={cn(styles.navLink, {
-              [styles.activeLink]: activeLink === '/education',
+              [styles.activeLink]: pathname === '/education',
             })}
             href='/education'
             onClick={() => setActiveLink('/education')}
