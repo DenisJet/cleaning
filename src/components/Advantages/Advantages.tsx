@@ -6,7 +6,7 @@ export default function Advantages() {
     <section className={styles.advantages}>
       <ul className={styles.advList}>
         <li className={cn(styles.advItem, styles.customers)}>
-          <p className={styles.itemNumber}>1567+</p>
+          <p className={styles.itemNumber}>5000+</p>
           <p className={styles.itemText}>Довольных клиентов</p>
         </li>
         <li className={cn(styles.advItem, styles.members)}>
