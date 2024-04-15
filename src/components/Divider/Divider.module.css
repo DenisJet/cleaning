@@ -1,0 +1,5 @@
+.divider {
+  height: 75px;
+  width: 100%;
+  background: var(--primary-blue);
+}

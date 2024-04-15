@@ -8,6 +8,7 @@ import Advantages from '@/components/Advantages/Advantages';
 import Benefits from '@/components/Benefits/Benefits';
 import Consultation from '@/components/Consultation/Consultation';
 import Gallery from '@/components/Gallery/Gallery';
+import Divider from '@/components/Divider/Divider';
 
 export default function Home() {
   const [modalActive, setModalActive] = useState(false);
@@ -16,7 +17,7 @@ export default function Home() {
     <>
       <main className={styles.main}>
         <Intro onClick={() => setModalActive(true)} />
-        <div className={styles.divider}></div>
+        <Divider />
         <Services onClick={() => setModalActive(true)} />
         <Advantages />
         <Benefits />
