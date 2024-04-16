@@ -1,0 +1,121 @@
+.benefits {
+  padding: 50px 20px;
+}
+
+.benefits h2 {
+  color: var(--primary-blue);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.benefitsItem {
+  max-width: 500px;
+}
+
+.itemTitle {
+  color: var(--primary-blue);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.itemText {
+  margin-top: 0;
+}
+
+.imageList {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-width: 360px;
+  max-height: 400px;
+  margin: auto;
+}
+
+.imageItem {
+  object-fit: cover;
+  max-width: 250px;
+  min-width: 150px;
+}
+
+.imageItem:first-child {
+  height: 250px;
+  grid-row: 1 / 3;
+  background: url("/cleaning1.png") no-repeat center / cover ;
+}
+
+.imageItem:nth-child(2) {
+  background: url("/cleaning2.png") no-repeat center / cover ;
+}
+
+.imageItem:nth-child(3) {
+  grid-column: 1 / 2;
+  background: url("/cleaning3.png") no-repeat center / cover ;
+}
+
+.imageItem:nth-child(4) {
+  grid-row: 2 / 4;
+  background: url("/cleaning4.png") no-repeat center / cover ;
+}
+
+@media screen and (width >= 900px) {
+  .benefits h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  .itemText {
+    font-size: 16px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .imageItem {
+    max-width: 250px;
+    min-width: 200px;
+  }
+
+  .benefitsList {
+    margin-right: 0;
+    justify-content: end;
+    margin-bottom: 0;
+  }
+
+  .imageList {
+    margin-left: 50px;
+  }
+}
