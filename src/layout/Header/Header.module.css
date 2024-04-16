@@ -24,12 +24,12 @@
 }
 
 .logo img {
-  width: 25px;
+  width: 50px;
   object-fit: cover;
 }
 
 .logo span {
-  font-size: 16px;
+  font-size: 26px;
   font-weight: 500;
 }
 
@@ -46,8 +46,8 @@
 
 .button {
   position: absolute;
-  right: 15px;
-  top: -13px;
+  right: 10px;
+  top: 5px;
   border: none;
   background-color: transparent;
   cursor: pointer;

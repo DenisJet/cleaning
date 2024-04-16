@@ -7,6 +7,8 @@ import EducationAdvantages from '@/components/EducationAdvantages/EducationAdvan
 import EducationResults from '@/components/EducationResults/EducationResults';
 import EducationTarif from '@/components/EducationTarif/EducationTarif';
 import { educationTarif } from '@/components/EducationTarif/tarif';
+import EducationProgram from '@/components/EducationProgram/EducationProgram';
+import Consultation from '@/components/Consultation/Consultation';
 
 export default function Education() {
   return (
@@ -16,7 +18,7 @@ export default function Education() {
           <div className={styles.introContainer}>
             <div className={styles.textContainer}>
               <h1 className={styles.introTitle}>
-                <span>Обучение клинингу и химчистке</span>
+                <span>Обучение по клинингу и химчистке</span>
                 <br></br>от собственников клининговой компании
               </h1>
               <p className={styles.introText}>
@@ -30,8 +32,9 @@ export default function Education() {
         </section>
         <Divider />
         <EducationAdvantages />
+        <EducationProgram />
         <EducationTarif educationTarif={educationTarif} />
-        <EducationResults />
+        <Consultation />
       </main>
       <Modal />
     </>

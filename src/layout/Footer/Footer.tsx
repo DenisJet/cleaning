@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <Link className={styles.logo} href='/'>
             <img src='logo.png' alt='логотип' />
-            <span>CleaningProfi</span>
+            <span>КлинингПрофи</span>
           </Link>
           <SocialList />
         </div>

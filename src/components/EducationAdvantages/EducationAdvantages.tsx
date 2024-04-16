@@ -5,20 +5,20 @@ export default function EducationAdvantages() {
     <section className={styles.educationAdvantages}>
       <ul className={styles.list}>
         <li className={styles.item}>
-          <h3 className={styles.title}>Видео уроки и созвоны</h3>
-          <p className={styles.text}>Постоянные видео созвоны, а так же 25 видео уроков, более 7 часов информации</p>
-        </li>
-        <li className={styles.item}>
-          <h3 className={styles.title}>Документация</h3>
-          <p className={styles.text}>Весь необходимый пакет документов для оказания услуг и найма сотрудников</p>
+          <h3 className={styles.title}>Индивидуальное и групповое обучение</h3>
+          <p className={styles.text}>Возможность обучаться он-лайн, а так же при личных встречах</p>
         </li>
         <li className={styles.item}>
           <h3 className={styles.title}>Готовый сайт</h3>
           <p className={styles.text}>Готовый сайт Клининговой компании + рекламная компания в Яндекс.Директе</p>
         </li>
         <li className={styles.item}>
+          <h3 className={styles.title}>Помощь</h3>
+          <p className={styles.text}>В выборе и покупке оборудования, химии, инвентаря</p>
+        </li>
+        <li className={styles.item}>
           <h3 className={styles.title}>Сопровождение</h3>
-          <p className={styles.text}>Сопровождение в течение месяца, с разбором всех вопросов (в тарифе VIP)</p>
+          <p className={styles.text}>В течение месяца, с разбором любых вопросов</p>
         </li>
       </ul>
     </section>

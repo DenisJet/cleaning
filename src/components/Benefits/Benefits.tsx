@@ -17,18 +17,18 @@ export default function Benefits() {
           </li>
           <li className={styles.benefitsItem}>
             <h3 className={styles.itemTitle}>Безопасные средства</h3>
-            <p className={styles.itemText}>Сертифицированная химия, безопасная для людей и домашних животных.</p>
+            <p className={styles.itemText}>Сертифицированная химия, безопасная для людей и домашних животных</p>
           </li>
           <li className={styles.benefitsItem}>
             <h3 className={styles.itemTitle}>Опытный персонал</h3>
-            <p className={styles.itemText}>Все наши сотрудники проходят обучение и имеют опыт работы.</p>
+            <p className={styles.itemText}>Все наши сотрудники проходят обучение и имеют опыт работы</p>
           </li>
           <li className={styles.benefitsItem}>
             <h3 className={styles.itemTitle}>100% Гарантия качества</h3>
             <p className={styles.itemText}>Гарантируем высокое качество услуг. Работаем на результат!</p>
           </li>
           <li className={styles.benefitsItem}>
-            <h3 className={styles.itemTitle}>Современное техника</h3>
+            <h3 className={styles.itemTitle}>Современное оборудование</h3>
             <p className={styles.itemText}>Качественное оборудование для создания идеальной чистоты</p>
           </li>
         </ul>

@@ -9,8 +9,8 @@ export default function Intro(): JSX.Element {
       <div className={styles.container}>
         <div className={styles.textContainer}>
           <h1 className={styles.title}>
-            <span>Услуги клининга</span>
-            <br></br>для частных и юридических лиц
+            <span>Услуги клининга и химчистки</span>
+            <br></br>для физических и юридических лиц
           </h1>
           <p className={styles.text}>
             Уборка помещений любой сложности! Профессиональная химчистка мягкой мебели, ковров, штор, портьер,
