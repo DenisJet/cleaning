@@ -10,7 +10,7 @@ export default function Services({ services }: ServicesProps): JSX.Element {
   return (
     <section className={styles.services}>
       <h2>Наши услуги</h2>
-      <p className={styles.title}>Что мы предлогаем</p>
+      <p className={styles.title}>Что мы предлагаем</p>
       <ul className={styles.servicesList}>
         {services &&
           services.length &&
