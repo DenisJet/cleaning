@@ -5,6 +5,8 @@ import Modal from '@/components/Modal/Modal';
 import Divider from '@/components/Divider/Divider';
 import EducationAdvantages from '@/components/EducationAdvantages/EducationAdvantages';
 import EducationResults from '@/components/EducationResults/EducationResults';
+import EducationTarif from '@/components/EducationTarif/EducationTarif';
+import { educationTarif } from '@/components/EducationTarif/tarif';
 
 export default function Education() {
   return (
@@ -28,7 +30,7 @@ export default function Education() {
         </section>
         <Divider />
         <EducationAdvantages />
-
+        <EducationTarif educationTarif={educationTarif} />
         <EducationResults />
       </main>
       <Modal />
