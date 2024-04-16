@@ -28,7 +28,6 @@
 }
 
 .introText {
-  font-size: 14px;
   max-width: 500px;
   margin-bottom: 30px;
 }
@@ -49,10 +48,6 @@
 
   .introTitle {
     font-size: 52px;
-  }
-
-  .introText {
-    font-size: 16px;
   }
 
   .imageContainer {

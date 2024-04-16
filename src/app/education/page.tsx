@@ -3,6 +3,7 @@ import Button from '@/components/Button/Button';
 import styles from './page.module.css';
 import Modal from '@/components/Modal/Modal';
 import Divider from '@/components/Divider/Divider';
+import EducationAdvantages from '@/components/EducationAdvantages/EducationAdvantages';
 
 export default function Education() {
   return (
@@ -25,6 +26,7 @@ export default function Education() {
           </div>
         </section>
         <Divider />
+        <EducationAdvantages />
       </main>
       <Modal />
     </>
