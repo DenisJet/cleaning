@@ -76,6 +76,10 @@
 }
 
 @media screen and (width >= 900px) {
+  .footer {
+    padding-bottom: 75px;
+  }
+
   .container {
     flex-direction: row;
     justify-content: space-between;

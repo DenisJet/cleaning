@@ -1,4 +1,22 @@
+import { Metadata } from 'next';
 import styles from './page.module.css';
+
+export const metadata: Metadata = {
+  title: 'Компания КлинингПрофи',
+  description:
+    'О компании КлинингПрофи. Профессиональные клининговые услуги и услуги по химчистке мягкой мебели, ковров, штор, портьер.',
+  openGraph: {
+    url: '',
+    title: 'Компания КлинингПрофи',
+    description:
+      'КлинингПрофи. Профессиональные клининговые услуги по химчистке мягкой мебели, ковров, штор, портьер. Заказать химчистку мебели, ковров, штор, портьер. Химчистка мебели цена.',
+    type: 'website',
+    images: '',
+  },
+  alternates: {
+    canonical: '',
+  },
+};
 
 export default function About() {
   return (

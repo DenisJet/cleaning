@@ -8,6 +8,24 @@ import Gallery from '@/components/Gallery/Gallery';
 import Divider from '@/components/Divider/Divider';
 import { cleaningServices } from '@/components/Services/cleaning.services';
 import Reviews from '@/components/Reviews/Reviews';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Клининговая компания КлинингПрофи. Услуги клининга',
+  description:
+    'КлинингПрофи. Профессиональные клининговые услуги по уборке квартир, домов, кафе, ресторанов, офисов, производственных помещений. Заказать клининг или химчистку мебели. Клининг цена. Клининг обучение',
+  openGraph: {
+    url: '',
+    title: 'Клининговая компания КлинингПрофи. Услуги клининга',
+    description:
+      'КлинингПрофи. Профессиональные клининговые услуги по уборке квартир, домов, кафе, ресторанов, офисов, производственных помещений. Заказать клининг или химчистку мебели. Клининг цена. Клининг обучение',
+    type: 'website',
+    images: '',
+  },
+  alternates: {
+    canonical: '',
+  },
+};
 
 export default function Home() {
   return (
