@@ -14,6 +14,44 @@
   margin-top: 5px;
 }
 
+.list {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  position: relative;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  min-width: 300px;
+  max-width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 1s;
+  box-shadow: 5px 5px 5px var(--light-gray);
+}
+
+.module {
+  background: var(--primary-blue);
+  color: var(--white);
+  padding: 5px 10px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.itemTitle {
+  color: var(--primary-blue);
+  margin-top: 0;
+}
+
 @media screen and (width >= 900px) {
   .educationProgram h2 {
     font-size: 20px;

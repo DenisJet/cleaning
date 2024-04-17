@@ -18,6 +18,9 @@ export default function EducationTarif({ educationTarif }: EducationTarifProps):
             <li key={tarif.id} className={styles.servicesItem}>
               <div className={styles.textItemContainer}>
                 <h3 className={styles.itemTitle}>{tarif.title}</h3>
+                <p className={styles.oldPrice}>
+                  <del>{tarif.oldPrice} ₽</del>
+                </p>
                 <p className={styles.newPrice}>{tarif.newPrice} ₽</p>
                 <ul className={styles.pointsList}>
                   {tarif.points.map((item, index) => (

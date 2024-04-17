@@ -66,9 +66,17 @@
   color: var(--primary-blue);
 }
 
+.oldPrice {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--light-gray);
+  margin-bottom: 0;
+}
+
 .newPrice {
   font-size: 28px;
   font-weight: 600;
+  margin-top: 0;
 }
 
 .pointsList {
