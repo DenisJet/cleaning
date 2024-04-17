@@ -1,10 +1,8 @@
 'use client';
 import Button from '@/components/Button/Button';
 import styles from './page.module.css';
-import Modal from '@/components/Modal/Modal';
 import Divider from '@/components/Divider/Divider';
 import EducationAdvantages from '@/components/EducationAdvantages/EducationAdvantages';
-import EducationResults from '@/components/EducationResults/EducationResults';
 import EducationTarif from '@/components/EducationTarif/EducationTarif';
 import { educationTarif } from '@/components/EducationTarif/tarif';
 import EducationProgram from '@/components/EducationProgram/EducationProgram';
@@ -36,7 +34,6 @@ export default function Education() {
         <EducationTarif educationTarif={educationTarif} />
         <Consultation />
       </main>
-      <Modal />
     </>
   );
 }

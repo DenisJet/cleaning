@@ -1,3 +1,4 @@
+'use client';
 import { useContext } from 'react';
 import styles from './Button.module.css';
 import cn from 'classnames';

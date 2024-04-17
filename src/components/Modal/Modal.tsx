@@ -1,4 +1,5 @@
-import { Dispatch, SetStateAction, useContext } from 'react';
+'use client';
+import { useContext } from 'react';
 import styles from './Modal.module.css';
 import { ModalContext } from '@/context/modal.context';
 

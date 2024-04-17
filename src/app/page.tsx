@@ -1,7 +1,6 @@
 'use client';
 import Intro from '@/components/Intro/Intro';
 import styles from './page.module.css';
-import Modal from '@/components/Modal/Modal';
 import Services from '@/components/Services/Services';
 import Advantages from '@/components/Advantages/Advantages';
 import Benefits from '@/components/Benefits/Benefits';
@@ -24,7 +23,6 @@ export default function Home() {
         <Reviews />
         <Consultation />
       </main>
-      <Modal />
     </>
   );
 }

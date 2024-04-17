@@ -3,8 +3,6 @@ import Consultation from '@/components/Consultation/Consultation';
 import styles from './page.module.css';
 import Divider from '@/components/Divider/Divider';
 import Button from '@/components/Button/Button';
-import { useState } from 'react';
-import Modal from '@/components/Modal/Modal';
 import Services from '@/components/Services/Services';
 import { dryCleaningServices } from '@/components/Services/cleaning.services';
 import Gallery from '@/components/Gallery/Gallery';
@@ -46,7 +44,6 @@ export default function DryCleaning() {
         <Reviews />
         <Consultation />
       </main>
-      <Modal />
     </>
   );
 }
