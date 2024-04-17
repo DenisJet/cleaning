@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/layout/Header/Header';
 import Footer from '@/layout/Footer/Footer';
 import { ModalContextProvider } from '@/context/modal.context';
+import MobileButton from '@/components/MobileButton/MobileButton';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <MobileButton />
         </body>
       </ModalContextProvider>
     </html>
