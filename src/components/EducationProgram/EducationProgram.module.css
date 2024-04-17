@@ -1,3 +1,7 @@
+.educationProgram {
+  margin-bottom: 50px;
+}
+
 .educationProgram h2 {
   color: var(--primary-blue);
   text-align: center;
@@ -20,7 +24,6 @@
   max-width: var(--max-width);
   display: flex;
   justify-content: center;
-  text-align: center;
   flex-direction: column;
   gap: 20px;
   margin-left: auto;
@@ -33,10 +36,19 @@
   border-radius: 5px;
   min-width: 300px;
   max-width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
   transition: 1s;
   box-shadow: 5px 5px 5px var(--light-gray);
+}
+
+.textContainer {
+  padding: 10px;
+}
+
+.item img {
+  border-radius: 0 0 5px 5px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
 .module {
@@ -62,5 +74,33 @@
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 50px;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item img {
+    border-radius: 0 5px 5px 0;
+    height: 310px;
+  }
+
+  .item:nth-child(even) img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .item:nth-child(even) {
+    text-align: end;
+  }
+
+  .item:nth-child(6) img {
+    object-fit: contain;
+  }
+
+  .textContainer {
+    padding: 20px;
   }
 }
