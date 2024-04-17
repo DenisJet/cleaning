@@ -9,6 +9,7 @@ import Services from '@/components/Services/Services';
 import { dryCleaningServices } from '@/components/Services/cleaning.services';
 import Gallery from '@/components/Gallery/Gallery';
 import Advantages from '@/components/Advantages/Advantages';
+import Link from 'next/link';
 
 export default function DryCleaning() {
   return (
@@ -28,7 +29,9 @@ export default function DryCleaning() {
                 </span>
               </p>
               <p className={styles.text}>
-                <span className={styles.red}>Обучение химчистке и клинингу!</span>
+                <Link href='/education'>
+                  <span className={styles.red}>Обучение химчистке и клинингу!</span>
+                </Link>
               </p>
               <Button />
             </div>

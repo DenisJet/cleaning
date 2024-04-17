@@ -1,9 +1,9 @@
 .intro {
   position: relative;
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 50px;
+  padding-top: 60px;
   z-index: 2;
 }
 
@@ -54,9 +54,17 @@
 }
 
 .text {
-  font-size: 14px;
   max-width: 500px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text .red {
+  color: var(--red);
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: underline;
 }
 
 .imageContainer {
@@ -123,7 +131,7 @@
   }
 
   .text {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .imageContainer {

@@ -5,6 +5,7 @@
   --dark-gray: #555555;
   --light-gray: #DEDEDE;
   --footer-color: #1E2746;
+  --red: rgb(219, 2, 2);
 
   --max-width: 1200px;
 }
@@ -17,6 +18,7 @@ body {
   height: 100%;
   margin: 0;
   color: var(--black);
+  font-size: 16px;
 }
 
 img {
