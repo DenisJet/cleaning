@@ -1,4 +1,3 @@
-'use client';
 import Intro from '@/components/Intro/Intro';
 import styles from './page.module.css';
 import Services from '@/components/Services/Services';

@@ -1,3 +1,4 @@
+'use client';
 import styles from './Gallery.module.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
