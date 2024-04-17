@@ -68,6 +68,27 @@ export default function Gallery() {
           <div className={styles.imageContainer}>
             <img className={styles.image} src='/gallery/gal6.png' alt='Фото работ' />
           </div>
+          <div className={styles.imageContainer}>
+            <img className={styles.image} src='/gallery/gal7.png' alt='Фото работ' />
+          </div>
+          <div className={styles.imageContainer}>
+            <img className={styles.image} src='/gallery/gal8.png' alt='Фото работ' />
+          </div>
+          <div className={styles.imageContainer}>
+            <img className={styles.image} src='/gallery/gal9.png' alt='Фото работ' />
+          </div>
+          <div className={styles.imageContainer}>
+            <img className={styles.image} src='/gallery/gal10.png' alt='Фото работ' />
+          </div>
+          <div className={styles.imageContainer}>
+            <img className={styles.image} src='/gallery/gal11.png' alt='Фото работ' />
+          </div>
+          <div className={styles.imageContainer}>
+            <img className={styles.image} src='/gallery/gal12.png' alt='Фото работ' />
+          </div>
+          <div className={styles.imageContainer}>
+            <img className={styles.image} src='/gallery/gal13.png' alt='Фото работ' />
+          </div>
         </Slider>
       </div>
     </section>

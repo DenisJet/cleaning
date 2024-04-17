@@ -10,6 +10,7 @@ import { dryCleaningServices } from '@/components/Services/cleaning.services';
 import Gallery from '@/components/Gallery/Gallery';
 import Advantages from '@/components/Advantages/Advantages';
 import Link from 'next/link';
+import Reviews from '@/components/Reviews/Reviews';
 
 export default function DryCleaning() {
   return (
@@ -42,6 +43,7 @@ export default function DryCleaning() {
         <Services services={dryCleaningServices} />
         <Advantages />
         <Gallery />
+        <Reviews />
         <Consultation />
       </main>
       <Modal />

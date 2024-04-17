@@ -1,0 +1,50 @@
+.reviews {
+  padding: 30px 10px;
+}
+
+.reviews h2 {
+  color: var(--primary-blue);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video {
+  object-fit: cover;
+}
+
+@media screen and (width >= 700px) {
+  .reviews {
+    padding: 50px 10px;
+  }
+
+  .reviews h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+}

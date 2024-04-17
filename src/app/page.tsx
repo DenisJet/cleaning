@@ -9,6 +9,7 @@ import Consultation from '@/components/Consultation/Consultation';
 import Gallery from '@/components/Gallery/Gallery';
 import Divider from '@/components/Divider/Divider';
 import { cleaningServices } from '@/components/Services/cleaning.services';
+import Reviews from '@/components/Reviews/Reviews';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Advantages />
         <Benefits />
         <Gallery />
+        <Reviews />
         <Consultation />
       </main>
       <Modal />
