@@ -18,7 +18,7 @@ export default function Intro(): JSX.Element {
             автомобиля! Обучение!
           </p>
           <p className={styles.text}>
-            <Link href='/education'>
+            <Link className={styles.link} href='/education'>
               <span className={styles.red}>Обучение химчистке и клинингу!</span>
             </Link>
           </p>
