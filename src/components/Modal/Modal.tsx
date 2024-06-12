@@ -2,6 +2,7 @@
 import { useContext } from 'react';
 import styles from './Modal.module.css';
 import { ModalContext } from '@/context/modal.context';
+import Form from '../Form/Form';
 
 export default function Modal(): JSX.Element {
   const { isOpen, setIsOpen } = useContext(ModalContext);
@@ -23,6 +24,7 @@ export default function Modal(): JSX.Element {
           </svg>
         </button>
         <p>Отправьте свой номер телефона и мы перезвоним Вам в ближайшее время</p>
+        <Form />
       </div>
     </div>
   );
