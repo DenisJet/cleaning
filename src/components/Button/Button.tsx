@@ -7,7 +7,7 @@ import { ModalContext } from '@/context/modal.context';
 interface ButtonProps {
   children?: ReactNode;
   className?: string;
-  type: 'submit' | 'reset' | 'button' | undefined;
+  type?: 'submit' | 'reset' | 'button' | undefined;
 }
 
 export default function Button({ children = 'Оставить заявку', className, type = 'button' }: ButtonProps): JSX.Element {
