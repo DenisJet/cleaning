@@ -60,7 +60,6 @@
   justify-content: space-evenly;
   width: 100%;
   margin-top: 10px;
-  z-index: 100;
 }
 
 .nav {
@@ -118,10 +117,4 @@
     gap: 20px;
     align-items: center;
   }
-}
-
-.navBackDrop {
-  width: 100vw;
-  height: 100vh;
-  background-color: azure;
 }
