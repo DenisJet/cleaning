@@ -1,10 +1,14 @@
 import axios from 'axios';
 import styles from './Form.module.css';
 import { useRouter } from 'next/navigation';
-import { useRef } from 'react';
+import { useContext, useRef } from 'react';
 import Button from '../Button/Button';
+import { ModalContext } from '@/context/modal.context';
 
 export default function Form() {
+  const { isOpen, setIsOpen } = useContext(ModalContext);
+
+  const formRef = useRef<HTMLFormElement>(null);
   const phoneRef = useRef<HTMLInputElement>(null);
   const nameRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
@@ -26,15 +30,16 @@ export default function Form() {
         text: message,
       })
       .then((response) => {
-        //this.number.value = '';
+        setIsOpen(false);
+        formRef.current?.reset();
         router.push('/thanks');
       })
       .catch(() => {});
   };
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
-      <input ref={phoneRef} type='tel' name='number' placeholder='Ваше имя' />
+    <form ref={formRef} className={styles.form} onSubmit={handleSubmit}>
+      <input ref={nameRef} type='tel' name='number' placeholder='Ваше имя' />
       <input ref={phoneRef} type='tel' name='number' placeholder='Ваш номер телефона' pattern='[0-9]{11}' required />
       <Button type='submit' className={styles.button}>
         Отправить
