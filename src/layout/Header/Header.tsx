@@ -71,15 +71,6 @@ export default function Header(): JSX.Element {
           </Link>
           <Link
             className={cn(styles.navLink, {
-              [styles.activeLink]: pathname === '/about',
-            })}
-            href='/about'
-            onClick={() => setActiveLink('/about')}
-          >
-            О компании
-          </Link>
-          <Link
-            className={cn(styles.navLink, {
               [styles.activeLink]: pathname === '/education',
             })}
             href='/education'
@@ -106,9 +97,6 @@ export default function Header(): JSX.Element {
             </Link>
             <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='/dry-cleaning'>
               Химчистка
-            </Link>
-            <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='/about'>
-              О компании
             </Link>
             <Link className={styles.navMobileLink} onClick={() => setIsOpened(false)} href='/education'>
               Обучение

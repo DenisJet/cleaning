@@ -18,9 +18,6 @@ export default function Footer() {
           <Link className={styles.navLink} href='/dry-cleaning'>
             Химчистка
           </Link>
-          <Link className={styles.navLink} href='/about'>
-            О компании
-          </Link>
           <Link className={styles.navLink} href='/education'>
             Обучение
           </Link>
