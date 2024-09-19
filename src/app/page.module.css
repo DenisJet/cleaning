@@ -8,3 +8,11 @@
   width: 100%;
   background: var(--primary-blue);
 }
+
+.notFound {
+  padding-top: 100px;
+  color: var(--black);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
