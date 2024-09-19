@@ -14,7 +14,7 @@ export default function SocialList() {
         </Link>
       </li>
       <li>
-        <Link className={styles.link} href='https://wa.me/+79822772846' target='_blank'>
+        <Link className={styles.link} href='https://wa.me/+79512708525' target='_blank'>
           <img className={styles.image} src='icon-wa.svg' alt='иконка соцсети' />
         </Link>
       </li>
