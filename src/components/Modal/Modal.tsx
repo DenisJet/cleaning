@@ -6,6 +6,7 @@ import Form from '../Form/Form';
 
 export default function Modal(): JSX.Element {
   const { isOpen, setIsOpen } = useContext(ModalContext);
+  console.log(isOpen);
 
   return (
     <div className={isOpen ? `${styles.modal} ${styles.active}` : styles.modal} onClick={() => setIsOpen(false)}>

@@ -9,8 +9,8 @@ export default function Form() {
   const nameRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
-  const TOKEN = '';
-  const CHAT_ID = '';
+  const TOKEN = '7813934402:AAELQTXKWKj4EeniC8DhjIGenzshAF-p084';
+  const CHAT_ID = '-1002400248770';
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   const handleSubmit = (evt: { preventDefault: () => void }) => {
