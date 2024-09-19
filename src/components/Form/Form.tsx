@@ -39,7 +39,7 @@ export default function Form() {
 
   return (
     <form ref={formRef} className={styles.form} onSubmit={handleSubmit}>
-      <input ref={nameRef} type='tel' name='number' placeholder='Ваше имя' />
+      <input ref={nameRef} type='text' name='name' placeholder='Ваше имя' />
       <input ref={phoneRef} type='tel' name='number' placeholder='Ваш номер телефона' pattern='[0-9]{11}' required />
       <Button type='submit' className={styles.button}>
         Отправить
