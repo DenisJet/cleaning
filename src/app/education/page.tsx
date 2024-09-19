@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: '',
   },
   alternates: {
-    canonical: '',
+    canonical: 'https://cleaning-proffi.ru/education/',
   },
   robots: {
     index: true,

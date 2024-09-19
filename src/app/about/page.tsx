@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     images: '',
   },
   alternates: {
-    canonical: '',
+    canonical: 'https://cleaning-proffi.ru/about/',
   },
   robots: {
     index: true,

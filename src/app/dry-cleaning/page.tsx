@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     images: '',
   },
   alternates: {
-    canonical: '',
+    canonical: 'https://cleaning-proffi.ru/dry-cleaning/',
   },
   robots: {
     index: true,
