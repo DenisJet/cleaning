@@ -47,7 +47,7 @@ export default function Header(): JSX.Element {
     <header className={styles.header}>
       <div className={styles.headerContainer}>
         <Link className={styles.logo} href='/' onClick={() => setIsOpened(false)}>
-          <img src='logo.png' alt='логотип' />
+          <img src='/logo.png' alt='логотип' />
           <span>линингПрофи</span>
         </Link>
         <nav className={styles.nav}>

@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <Link className={styles.logo} href='/'>
-          <img src='logo.png' alt='логотип' />
+          <img src='/logo.png' alt='логотип' />
           <span>линингПрофи</span>
         </Link>
 

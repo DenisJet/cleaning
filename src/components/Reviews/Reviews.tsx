@@ -14,9 +14,9 @@ export default function Reviews() {
             height='240'
             controls
             preload='none'
-            poster='reviews/posters/2.png'
+            poster='/reviews/posters/2.png'
           >
-            <source src='reviews/Отзыв _ Уборка.mp4' type='video/mp4' />
+            <source src='/reviews/Отзыв _ Уборка.mp4' type='video/mp4' />
           </video>
         </li>
         <li className={styles.item}>
@@ -26,9 +26,9 @@ export default function Reviews() {
             height='240'
             controls
             preload='none'
-            poster='reviews/posters/1.png'
+            poster='/reviews/posters/1.png'
           >
-            <source src='reviews/Отзыв _ Химчистка дивана и ковра.mp4' type='video/mp4' />
+            <source src='/reviews/Отзыв _ Химчистка дивана и ковра.mp4' type='video/mp4' />
           </video>
         </li>
         <li className={styles.item}>
@@ -38,9 +38,9 @@ export default function Reviews() {
             height='240'
             controls
             preload='none'
-            poster='reviews/posters/3.png'
+            poster='/reviews/posters/3.png'
           >
-            <source src='reviews/Отзыв клиента _ Химчистка дивана.mp4' type='video/mp4' />
+            <source src='/reviews/Отзыв клиента _ Химчистка дивана.mp4' type='video/mp4' />
           </video>
         </li>
       </ul>

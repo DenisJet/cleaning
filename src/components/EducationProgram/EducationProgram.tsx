@@ -12,7 +12,7 @@ export default function EducationProgram() {
             <h3 className={styles.itemTitle}>Введение. Основы Клининга</h3>
             <p className={styles.text}>Урок 1. Основные направления в клининге и химчистке</p>
           </div>
-          <img src='pro1.png' alt='' />
+          <img src='/pro1.png' alt='' />
         </li>
         <li className={styles.item}>
           <div className={styles.textContainer}>
@@ -25,7 +25,7 @@ export default function EducationProgram() {
               Урок 5. Материаловедение (Химчистка). Разбор всех видов обивки и тканей, техника безопасности
             </p>
           </div>
-          <img src='pro2.png' alt='' />
+          <img src='/pro2.png' alt='' />
         </li>
         <li className={styles.item}>
           <div className={styles.textContainer}>
@@ -36,7 +36,7 @@ export default function EducationProgram() {
               Урок 7. Удаление сложных загрязнений и запахов на мягкой мебели и ковровых покрытиях
             </p>
           </div>
-          <img src='pro3.png' alt='' />
+          <img src='/pro3.png' alt='' />
         </li>
         <li className={styles.item}>
           <div className={styles.textContainer}>
@@ -47,7 +47,7 @@ export default function EducationProgram() {
             <p className={styles.text}>Урок 10. Собеседования</p>
             <p className={styles.text}>Урок 11. Прием заказа, как закрыть звонок в заявку</p>
           </div>
-          <img src='pro4.png' alt='' />
+          <img src='/pro4.png' alt='' />
         </li>
         <li className={styles.item}>
           <div className={styles.textContainer}>
@@ -57,7 +57,7 @@ export default function EducationProgram() {
             <p className={styles.text}>Урок 13. Оценка объектов чистки и вопросы перед химчисткой</p>
             <p className={styles.text}>Урок 14. Сбор на заказ Химчистка мебели (оборудование, инвентарь и химия)</p>
           </div>
-          <img src='pro5.png' alt='' />
+          <img src='/pro5.png' alt='' />
         </li>
         <li className={styles.item}>
           <div className={styles.textContainer}>
@@ -65,7 +65,7 @@ export default function EducationProgram() {
             <h3 className={styles.itemTitle}>Маркетинг</h3>
             <p className={styles.text}>Урок 15. Где искать клиента (Где заявить о себе, чтобы клиент нашел нас сам)</p>
           </div>
-          <img src='pro6.png' alt='' />
+          <img src='/pro6.png' alt='' />
         </li>
         <li className={styles.item}>
           <div className={styles.textContainer}>
@@ -73,7 +73,7 @@ export default function EducationProgram() {
             <h3 className={styles.itemTitle}>Вопрос / Ответ</h3>
             <p className={styles.text}>Урок 16. Разбор форс-мажорных ситуаций</p>
           </div>
-          <img src='pro7.png' alt='' />
+          <img src='/pro7.png' alt='' />
         </li>
       </ul>
     </section>
