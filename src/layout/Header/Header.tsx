@@ -62,19 +62,19 @@ export default function Header(): JSX.Element {
           </Link>
           <Link
             className={cn(styles.navLink, {
-              [styles.activeLink]: pathname === '/dry-cleaning',
+              [styles.activeLink]: pathname === '/dry-cleaning/',
             })}
             href='/dry-cleaning'
-            onClick={() => setActiveLink('/dry-cleaning')}
+            onClick={() => setActiveLink('/dry-cleaning/')}
           >
             Химчистка
           </Link>
           <Link
             className={cn(styles.navLink, {
-              [styles.activeLink]: pathname === '/education',
+              [styles.activeLink]: pathname === '/education/',
             })}
             href='/education'
-            onClick={() => setActiveLink('/education')}
+            onClick={() => setActiveLink('/education/')}
           >
             Обучение
           </Link>
