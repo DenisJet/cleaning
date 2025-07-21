@@ -1,9 +1,9 @@
-import axios from 'axios';
-import styles from './Form.module.css';
-import { useRouter } from 'next/navigation';
-import { useContext, useRef } from 'react';
-import Button from '../Button/Button';
-import { ModalContext } from '@/context/modal.context';
+import axios from "axios";
+import styles from "./Form.module.css";
+import { useRouter } from "next/navigation";
+import { useContext, useRef } from "react";
+import Button from "../Button/Button";
+import { ModalContext } from "@/context/modal.context";
 
 export default function Form() {
   const { isOpen, setIsOpen } = useContext(ModalContext);
@@ -13,8 +13,12 @@ export default function Form() {
   const nameRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
-  const TOKEN = '7813934402:AAELQTXKWKj4EeniC8DhjIGenzshAF-p084';
-  const CHAT_ID = '-1002400248770';
+  // const TOKEN = '7813934402:AAELQTXKWKj4EeniC8DhjIGenzshAF-p084';
+  // const CHAT_ID = '-1002400248770';
+  // const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+  const TOKEN = "6255542939:AAHERS28Vi18xML8uUg2v1GnJC9OKph6zwg";
+  const CHAT_ID = "-1001650046621";
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   const handleSubmit = (evt: { preventDefault: () => void }) => {
@@ -26,22 +30,29 @@ export default function Form() {
     axios
       .post(URI_API, {
         chat_id: CHAT_ID,
-        parse_mode: 'html',
+        parse_mode: "html",
         text: message,
       })
       .then((response) => {
         setIsOpen(false);
         formRef.current?.reset();
-        router.push('/thanks');
+        router.push("/thanks");
       })
       .catch(() => {});
   };
 
   return (
     <form ref={formRef} className={styles.form} onSubmit={handleSubmit}>
-      <input ref={nameRef} type='text' name='name' placeholder='Ваше имя' />
-      <input ref={phoneRef} type='tel' name='number' placeholder='Ваш номер телефона' pattern='[0-9]{11}' required />
-      <Button type='submit' className={styles.button}>
+      <input ref={nameRef} type="text" name="name" placeholder="Ваше имя" />
+      <input
+        ref={phoneRef}
+        type="tel"
+        name="number"
+        placeholder="Ваш номер телефона"
+        pattern="[0-9]{11}"
+        required
+      />
+      <Button type="submit" className={styles.button}>
         Отправить
       </Button>
     </form>
