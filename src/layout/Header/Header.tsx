@@ -86,7 +86,7 @@ export default function Header(): JSX.Element {
           >
             Обучение
           </Link>
-          <Link className={styles.tel} href="tel:+79822772846">
+          <Link className={styles.tel} href="tel:+79518063450">
             <svg
               width="16"
               height="16"
@@ -101,7 +101,7 @@ export default function Header(): JSX.Element {
                 strokeLinejoin="round"
               />
             </svg>
-            8 982 277 28 46
+            +7 951 806 34 50
           </Link>
         </nav>
         {isOpened ? (

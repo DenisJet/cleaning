@@ -7,7 +7,7 @@ import MobileButton from "@/components/MobileButton/MobileButton";
 import Modal from "@/components/Modal/Modal";
 import YandexMetrikaContainer from "@/components/Metrika/YandexMetrikaContainer";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin", "cyrillic"] });
 // const analyticsEnabled = !!(process.env.NODE_ENV === "production");
 
 export default function RootLayout({
