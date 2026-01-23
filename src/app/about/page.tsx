@@ -1,20 +1,20 @@
-import { Metadata } from 'next';
-import styles from './page.module.css';
+import { Metadata } from "next";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: 'Компания КлинингПрофи',
+  title: "Компания КлинингГром",
   description:
-    'О компании КлинингПрофи. Профессиональные клининговые услуги и услуги по химчистке мягкой мебели, ковров, штор, портьер.',
+    "О компании КлинингГром. Профессиональные клининговые услуги и услуги по химчистке мягкой мебели, ковров, штор, портьер.",
   openGraph: {
-    url: '',
-    title: 'Компания КлинингПрофи',
+    url: "https://cleaning-proffi.ru/about/",
+    title: "Компания КлинингГром",
     description:
-      'КлинингПрофи. Профессиональные клининговые услуги по химчистке мягкой мебели, ковров, штор, портьер. Заказать химчистку мебели, ковров, штор, портьер. Химчистка мебели цена.',
-    type: 'website',
-    images: '',
+      "КлинингГром. Профессиональные клининговые услуги по химчистке мягкой мебели, ковров, штор, портьер. Заказать химчистку мебели, ковров, штор, портьер. Химчистка мебели цена.",
+    type: "website",
+    images: "",
   },
   alternates: {
-    canonical: 'https://cleaning-proffi.ru/about/',
+    canonical: "https://cleaning-proffi.ru/about/",
   },
   robots: {
     index: true,

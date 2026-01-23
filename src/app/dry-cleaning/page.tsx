@@ -1,30 +1,30 @@
-import Consultation from '@/components/Consultation/Consultation';
-import styles from './page.module.css';
-import Divider from '@/components/Divider/Divider';
-import Button from '@/components/Button/Button';
-import Services from '@/components/Services/Services';
-import { dryCleaningServices } from '@/components/Services/cleaning.services';
-import Gallery from '@/components/Gallery/Gallery';
-import Advantages from '@/components/Advantages/Advantages';
-import Link from 'next/link';
-import Reviews from '@/components/Reviews/Reviews';
-import Benefits from '@/components/Benefits/Benefits';
-import { Metadata } from 'next';
+import Consultation from "@/components/Consultation/Consultation";
+import styles from "./page.module.css";
+import Divider from "@/components/Divider/Divider";
+import Button from "@/components/Button/Button";
+import Services from "@/components/Services/Services";
+import { dryCleaningServices } from "@/components/Services/cleaning.services";
+import Gallery from "@/components/Gallery/Gallery";
+import Advantages from "@/components/Advantages/Advantages";
+import Link from "next/link";
+import Reviews from "@/components/Reviews/Reviews";
+import Benefits from "@/components/Benefits/Benefits";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Компания КлинингПрофи. Услуги по химчистке мягкой мебели',
+  title: "Компания КлинингГром. Услуги по химчистке мягкой мебели",
   description:
-    'КлинингПрофи. Профессиональные клининговые услуги по химчистке мягкой мебели, ковров, штор, портьер. Заказать химчистку мебели, ковров, штор, портьер. Химчистка мебели цена. Обучение химчистке мягкой мебели',
+    "КлинингГром. Профессиональные клининговые услуги по химчистке мягкой мебели, ковров, штор, портьер. Заказать химчистку мебели, ковров, штор, портьер. Химчистка мебели цена. Обучение химчистке мягкой мебели",
   openGraph: {
-    url: '',
-    title: 'Компания КлинингПрофи. Услуги по химчистке мягкой мебели',
+    url: "https://cleaning-proffi.ru/dry-cleaning/",
+    title: "Компания КлинингГром. Услуги по химчистке мягкой мебели",
     description:
-      'КлинингПрофи. Профессиональные клининговые услуги по химчистке мягкой мебели, ковров, штор, портьер. Заказать химчистку мебели, ковров, штор, портьер. Химчистка мебели цена. Обучение химчистке мягкой мебели',
-    type: 'website',
-    images: '',
+      "КлинингГром. Профессиональные клининговые услуги по химчистке мягкой мебели, ковров, штор, портьер. Заказать химчистку мебели, ковров, штор, портьер. Химчистка мебели цена. Обучение химчистке мягкой мебели",
+    type: "website",
+    images: "",
   },
   alternates: {
-    canonical: 'https://cleaning-proffi.ru/dry-cleaning/',
+    canonical: "https://cleaning-proffi.ru/dry-cleaning/",
   },
   robots: {
     index: true,
@@ -45,13 +45,16 @@ export default function DryCleaning() {
               </h1>
               <p className={styles.text}>
                 <span>
-                  Профессиональная химчистка мягкой мебели, ковров, штор, портьер, матрасов, автомобиля! Выведение пятен
-                  и запахов. Работаем с деликатными тканями и мебелью премиум класса.
+                  Профессиональная химчистка мягкой мебели, ковров, штор,
+                  портьер, матрасов, автомобиля! Выведение пятен и запахов.
+                  Работаем с деликатными тканями и мебелью премиум класса.
                 </span>
               </p>
               <p className={styles.text}>
-                <Link className={styles.link} href='/education/'>
-                  <span className={styles.red}>Обучение химчистке и клинингу!</span>
+                <Link className={styles.link} href="/education/">
+                  <span className={styles.red}>
+                    Обучение химчистке и клинингу!
+                  </span>
                 </Link>
               </p>
               <Button />

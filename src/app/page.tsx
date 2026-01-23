@@ -1,29 +1,29 @@
-import Intro from '@/components/Intro/Intro';
-import styles from './page.module.css';
-import Services from '@/components/Services/Services';
-import Advantages from '@/components/Advantages/Advantages';
-import Benefits from '@/components/Benefits/Benefits';
-import Consultation from '@/components/Consultation/Consultation';
-import Gallery from '@/components/Gallery/Gallery';
-import Divider from '@/components/Divider/Divider';
-import { cleaningServices } from '@/components/Services/cleaning.services';
-import Reviews from '@/components/Reviews/Reviews';
-import { Metadata } from 'next';
+import Intro from "@/components/Intro/Intro";
+import styles from "./page.module.css";
+import Services from "@/components/Services/Services";
+import Advantages from "@/components/Advantages/Advantages";
+import Benefits from "@/components/Benefits/Benefits";
+import Consultation from "@/components/Consultation/Consultation";
+import Gallery from "@/components/Gallery/Gallery";
+import Divider from "@/components/Divider/Divider";
+import { cleaningServices } from "@/components/Services/cleaning.services";
+import Reviews from "@/components/Reviews/Reviews";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Клининговая компания КлинингПрофи. Услуги клининга',
+  title: "Клининговая компания КлинингГром. Услуги клининга",
   description:
-    'КлинингПрофи. Профессиональные клининговые услуги по уборке квартир, домов, кафе, ресторанов, офисов, производственных помещений. Заказать клининг или химчистку мебели. Клининг цена. Клининг обучение',
+    "КлинингГром. Профессиональные клининговые услуги по уборке квартир, домов, кафе, ресторанов, офисов, производственных помещений. Заказать клининг или химчистку мебели. Клининг цена. Клининг обучение",
   openGraph: {
-    url: '',
-    title: 'Клининговая компания КлинингПрофи. Услуги клининга',
+    url: "https://cleaning-proffi.ru/",
+    title: "Клининговая компания КлинингГром. Услуги клининга",
     description:
-      'КлинингПрофи. Профессиональные клининговые услуги по уборке квартир, домов, кафе, ресторанов, офисов, производственных помещений. Заказать клининг или химчистку мебели. Клининг цена. Клининг обучение',
-    type: 'website',
-    images: '',
+      "КлинингГром. Профессиональные клининговые услуги по уборке квартир, домов, кафе, ресторанов, офисов, производственных помещений. Заказать клининг или химчистку мебели. Клининг цена. Клининг обучение",
+    type: "website",
+    images: "",
   },
   alternates: {
-    canonical: 'https://cleaning-proffi.ru/',
+    canonical: "https://cleaning-proffi.ru/",
   },
   robots: {
     index: true,

@@ -4,11 +4,7 @@ import styles from "./Header.module.css";
 import { useEffect, useRef, useState } from "react";
 import cn from "classnames";
 import { usePathname } from "next/navigation";
-import {
-  disableBodyScroll,
-  enableBodyScroll,
-  clearAllBodyScrollLocks,
-} from "body-scroll-lock";
+import { clearAllBodyScrollLocks } from "body-scroll-lock";
 
 const useOutsideClick = (initialValue: boolean) => {
   const [isOpened, setIsOpened] = useState(initialValue);
@@ -56,7 +52,7 @@ export default function Header(): JSX.Element {
           onClick={() => setIsOpened(false)}
         >
           <img src="/logo.png" alt="логотип" />
-          <span>линингПрофи</span>
+          <span>линингГром</span>
         </Link>
         <nav className={styles.nav}>
           <Link
